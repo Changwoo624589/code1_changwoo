@@ -11,12 +11,14 @@ void draw(){
   rect(0, 0, width, height);
   
   
-  background(0);
-  stroke(random(0,255),  random(0,255), random(0,255));
-  line(mouseX, mouseY, width/2, height/2);
+  
+  stroke(random(0,255), random(0,255), random(0,255));
+  //line(mouseX, mouseY, width/2, height/2);
   line(width/2, height/2, mouseX, mouseY);
+  line(mouseX, width/2,  mouseY, height/2);
   
   println(mouseX);
+  println(mouseY);
   
   
   
